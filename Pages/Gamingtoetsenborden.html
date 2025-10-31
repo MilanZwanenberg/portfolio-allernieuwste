@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming Toetsenborden - Ultimate Gaming Gear</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <script src="../scripts/cart.js"></script>
+
+    <style>
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    justify-content: center;
+    align-items: stretch; /* Zorgt ervoor dat alle kolommen dezelfde hoogte hebben */
+}
+
+.product-card {
+    background: #ffffff;
+    color: #000000;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    max-width: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Zorgt ervoor dat alle kaarten even hoog zijn */
+}
+
+.product-card img {
+    max-width: 100%;
+    height: 200px; /* Standaard hoogte voor afbeeldingen */
+    object-fit: cover; /* Zorgt ervoor dat de afbeelding mooi binnen de ruimte past */
+    border-radius: 8px;
+}
+
+.product-card h3, .product-card p {
+    flex-grow: 1; /* Zorgt ervoor dat de tekst flexibel ruimte inneemt */
+}
+
+.product-card .btn {
+    margin-top: auto; /* Zorgt ervoor dat de knop altijd onderaan blijft */
+}
+
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="../Pages/index.html" class="logo">Premium Keyboards</a>
+                <ul class="nav-links">
+                    <li><a href="../Pages/index.html">Home</a></li>
+                    <li><a href="../Pages/producten.html">Producten</a></li>
+                    <li><a href="../Pages/about.html">Over ons</a></li>
+                    <li><a href="../Pages/contact.html">Contact</a></li>
+                    <li class="cart-indicator">
+                        <a href="../Pages/winkelmand.html">🛒</a>
+                        <span id="cart-count" class="cart-count">0</span>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main content - Gaming Keyboards List -->
+    <div class="main-content">
+        <div class="container">
+            <h1 class="page-title">Gaming Toetsenborden</h1>
+            <p>Upgrade je gaming-setup met onze high-performance mechanische gaming toetsenborden, uitgerust met RGB-verlichting en ultra-responsieve switches.</p>
+            
+            <div class="products-grid">
+                <div class="product-card">
+                    <img src="../images/logi.jpg" alt="GK Pro RGB Toetsenbord">
+                    <h3>GK Pro RGB Gaming Toetsenbord</h3>
+                    <p class="price">€159,99</p>
+                    <p>Tenkeyless (TKL) ontwerp met hot-swappable switches en dynamische RGB-verlichting.</p>
+                    <a href="../Pages/gaming-keyboard-gkpro.html" class="btn">Bekijk product</a>
+                </div>
+
+                <div class="product-card">
+                    <img src="../images/nob.webp" alt="GK Mini Compact">
+                    <h3>GK Mini Compact 60%</h3>
+                    <p class="price">€129,99</p>
+                    <p>60% compact design met snelle optische switches en programmeerbare macros.</p>
+                    <a href="../Pages/gaming-keyboard-gkmini.html" class="btn">Bekijk product</a>
+                </div>
+
+                <div class="product-card">
+                    <img src="../images/Naamloos.jpg" alt="GK Ultimate Full-size">
+                    <h3>GK Ultimate Full-size</h3>
+                    <p class="price">€179,99</p>
+                    <p>Volledig toetsenbord met media-bediening, aluminium behuizing en RGB spectrum.</p>
+                    <a href="../Pages/gaming-keyboard-gkultimate.html" class="btn">Bekijk product</a>
+                </div>
+
+                <div class="product-card">
+                    <img src="../images/rbg.png" alt="GK Wireless RGB">
+                    <h3>GK Wireless RGB Gaming Toetsenbord</h3>
+                    <p class="price">€149,99</p>
+                    <p>Draadloos en bedraad met Bluetooth 5.0 en een batterijduur tot 50 uur.</p>
+                    <a href="../Pages/gaming-keyboard-gkwireless.html" class="btn">Bekijk product</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <!-- Footer -->
+     <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-section">
+                    <h3>Premium Keyboards</h3>
+                    <p>Specialist in custom mechanische toetsenborden voor gaming, typing en professionals.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="producten.html">Producten</a></li>
+                        <li><a href="about.html">Over ons</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <ul class="footer-links">
+                        <li>Toetsenbordstraat 123</li>
+                        <li>1234 AB Amsterdam</li>
+                        <li>info@premiumkeyboards.nl</li>
+                        <li>+31 6 12345678</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Premium Keyboards. Alle rechten voorbehouden.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

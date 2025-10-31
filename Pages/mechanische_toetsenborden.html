@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mechanische Toetsenborden - Premium Keyboards</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <script src="../scripts/cart.js"></script>
+
+    <style>
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            justify-content: center;
+            align-items: stretch; /* Zorgt ervoor dat alle kolommen dezelfde hoogte hebben */
+        }
+        
+        .product-card {
+            background: #ffffff;
+            color: #000000;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            text-align: center;
+            max-width: 400px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            height: 100%; /* Zorgt ervoor dat alle kaarten even hoog zijn */
+        }
+        
+        .product-card img {
+            max-width: 100%;
+            height: 200px; /* Standaard hoogte voor afbeeldingen */
+            object-fit: cover; /* Zorgt ervoor dat de afbeelding mooi binnen de ruimte past */
+            border-radius: 8px;
+        }
+        
+        .product-card h3, .product-card p {
+            flex-grow: 1; /* Zorgt ervoor dat de tekst flexibel ruimte inneemt */
+        }
+        
+        .product-card .btn {
+            margin-top: auto; /* Zorgt ervoor dat de knop altijd onderaan blijft */
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="../Pages/index.html" class="logo">Premium Keyboards</a>
+                <ul class="nav-links">
+                    <li><a href="../Pages/index.html">Home</a></li>
+                    <li><a href="../Pages/producten.html">Producten</a></li>
+                    <li><a href="../Pages/about.html">Over ons</a></li>
+                    <li><a href="../Pages/contact.html">Contact</a></li>
+                    <li class="cart-indicator">
+                        <a href="../Pages/winkelmand.html">🛒</a>
+                        <span id="cart-count" class="cart-count">0</span>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main content - Product List -->
+    <div class="main-content">
+        <div class="container">
+            <h1 class="page-title">Mechanische Toetsenborden</h1>
+            <p>Ontdek onze premium collectie mechanische toetsenborden met diverse switch-opties voor de ultieme typervaring.</p>
+            
+            <div class="products-grid">
+                <div class="product-card">
+                    <img src="../images/80.webp" alt="MK75 Mechanisch Toetsenbord">
+                    <h3>MK75 Mechanisch Gaming Toetsenbord</h3>
+                    <p class="price">€149,99</p>
+                    <p>75% layout met Cherry MX Brown switches en RGB verlichting.</p>
+                    <a href="../Pages/Mechanische_Toetsenbord/mechanisch-toetsenbord-mk75.html" class="btn">Bekijk product</a>
+                </div>
+
+                <div class="product-card">
+                    <img src="../images/65.jpg" alt="MK65 Compact Toetsenbord">
+                    <h3>MK65 Compact Toetsenbord</h3>
+                    <p class="price">€129,99</p>
+                    <p>65% layout met Gateron Red switches voor een soepele typervaring.</p>
+                    <a href="../Pages/Mechanische_Toetsenbord/mk65-compact.html" class="btn">Bekijk product</a>
+                </div>
+
+                <div class="product-card">
+                    <img src="../images/fulllll.jpg" alt="MK100 Full-size Toetsenbord">
+                    <h3>MK100 Full-size Toetsenbord</h3>
+                    <p class="price">€169,99</p>
+                    <p>100% layout met Cherry MX Blue switches en multimedia toetsen.</p>
+                    <a href="../pages/Mechanische_Toetsenbord/full-mechanisch.html" class="btn">Bekijk product</a>
+                </div>
+
+                <div class="product-card">
+                    <img src="../images/xiaomi-keyboard-tls.webp" alt="MK80 TKL Toetsenbord">
+                    <h3>MK80 TKL Toetsenbord</h3>
+                    <p class="price">€139,99</p>
+                    <p>Tenkeyless layout met Kailh Box White switches en PBT keycaps.</p>
+                    <a href="../Pages/Mechanische_Toetsenbord/80TKL.html" class="btn">Bekijk product</a>
+                </div>
+
+                <div class="product-card">
+                    <img src="../images/60procentkeyboard.webp" alt="MK60 Ultra Compact Toetsenbord">
+                    <h3>MK60 Ultra Compact Toetsenbord</h3>
+                    <p class="price">€119,99</p>
+                    <p>60% layout met Gateron Yellow switches, perfect voor gaming.</p>
+                    <a href="../Pages/Mechanische_Toetsenbord/mk60-pro.html" class="btn">Bekijk product</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-section">
+                    <h3>Premium Keyboards</h3>
+                    <p>Specialist in custom mechanische toetsenborden voor gaming, typing en professionals.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="producten.html">Producten</a></li>
+                        <li><a href="about.html">Over ons</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <ul class="footer-links">
+                        <li>Toetsenbordstraat 123</li>
+                        <li>1234 AB Amsterdam</li>
+                        <li>info@premiumkeyboards.nl</li>
+                        <li>+31 6 12345678</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Premium Keyboards. Alle rechten voorbehouden.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
