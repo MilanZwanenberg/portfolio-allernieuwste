@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Winkelmand</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <script src="../scripts/cart.js"></script>
+    <script src="../scripts/main.js"></script>
+    <style>
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 40px 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            min-height: 60vh;
+        }
+
+        #cart-items, #cart-summary {
+            max-width: 600px;
+            width: 100%;
+            background: #f8f8f8;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .cart-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .cart-item input {
+            width: 50px;
+            text-align: center;
+        }
+
+        button {
+            background-color: #3b82f6;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px 0;
+            font-size: 1rem;
+        }
+
+        button:hover {
+            background-color: #2563eb;
+        }
+    </style>
+
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="../Pages/index.html" class="logo">Premium Keyboards</a>
+                <ul class="nav-links">
+                    <li><a href="../Pages/index.html">Home</a></li>
+                    <li><a href="../Pages/producten.html">Producten</a></li>
+                    <li><a href="../Pages/about.html">Over ons</a></li>
+                    <li><a href="../Pages/contact.html">Contact</a></li>
+                    <li class="cart-indicator">
+                        <a href="../Pages/winkelmand.html">🛒</a>
+                        <span id="cart-count" class="cart-count">0</span>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h2>Uw Winkelmand</h2>
+        <div id="cart-items"></div>
+        <div id="cart-summary">
+            <h3>Bestellingsoverzicht</h3>
+            <p>Totaal: <span id="cart-total">€0,00</span></p>
+            <button id="clear-cart">Winkelmand legen</button>
+        </div>
+        <button id="checkout-button">Afrekenen</button>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-section">
+                    <h3>Premium Keyboards</h3>
+                    <p>Specialist in custom mechanische toetsenborden voor gaming, typing en professionals.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="/Pages/index.html">Home</a></li>
+                        <li><a href="/Pages/producten.html">Producten</a></li>
+                        <li><a href="/Pages/about.html">Over ons</a></li>
+                        <li><a href="/Pages/contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <ul class="footer-links">
+                        <li>Toetsenbordstraat 123</li>
+                        <li>1234 AB Amsterdam</li>
+                        <li>info@premiumkeyboards.nl</li>
+                        <li>+31 6 12345678</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Premium Keyboards. Alle rechten voorbehouden.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
